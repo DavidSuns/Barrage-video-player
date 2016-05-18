@@ -1,0 +1,18 @@
+{
+  "name": "Barrage-video-player",
+  "description": "A html5 video player,  which has barrage feature.",
+  "version": "1.0.0",
+  "author": {
+    "name": "David Sun"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "video, player"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
