@@ -8,11 +8,13 @@
   "repository": {
     "type": "git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-sass": "2.3.1"
+  },
   "keywords": [
     "video, player"
   ],
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "3.9.1"
   }
 }

@@ -567,17 +567,17 @@ body.custom-fullscreen {
   background-repeat:no-repeat;
 }
 
-/*.show-mode-item .show-style-icon.style-one {
-  background-image:image-url('ABPlayer/go-through-show.png');
+.show-mode-item .show-style-icon.style-one {
+  background-image:image-url('./../images/go-through-show.png');
 }
 
 .show-mode-item .show-style-icon.style-two {
-  background-image:image-url('ABPlayer/top-show.png');
+  background-image:image-url('./../images/top-show.png');
 }
 
 .show-mode-item .show-style-icon.style-three {
-  background-image:image-url('ABPlayer/bottom-show.png');
-}*/
+  background-image:image-url('./../images/bottom-show.png');
+}
 
 .show-mode-item .show-style-text {
   margin-top:5px;
@@ -953,7 +953,7 @@ body.custom-fullscreen {
   left: 98px;
   width: 632px;
   height: 339px;
-  background-image: image-url('ABPlayer/video-error.png');
+  background-image: image-url('./../images/video-error.png');
 }
 
 @-webkit-keyframes bouncedelay {
@@ -980,7 +980,7 @@ body.custom-fullscreen {
   asset-url('ABPlayer/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-/*.iconfont {
+.iconfont {
   font-family:"iconfont" !important;
   font-size:19px;
   color:#ff7877;
@@ -1004,7 +1004,7 @@ body.custom-fullscreen {
 .icon-next:before { content: "\e60b"; font-size:19px;}
 .icon-fullscreen:before { content: "\e605"; }
 .icon-cancel-fullscreen:before { content: "\e606"; }
-.icon-kaminari-general-settings:before { content: "\e60d"; font-size:16px;}*/
+.icon-kaminari-general-settings:before { content: "\e60d"; font-size:16px;}
 
 /** Aliases for Chinese named fonts because they don't work on *nix **/
 @font-face {
