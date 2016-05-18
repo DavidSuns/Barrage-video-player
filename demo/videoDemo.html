@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>video demo</title>
+    <style>
+      .player-style {
+        width: 828px;
+        height:537px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ABPlayer" class="player-style">
+    </div>
+  </body>
+  <script src="./../js/CommentCoreLibrary.js"></script>
+  <script src="./../js/ABPLibxml.js"></script>
+  <script src="./../js/ABPlayer.js"></script>
+  <script>
+    var inst = ABP.create($("#ABPlayer"), {
+      width: '100%',
+      height: '537',
+      src: 'test-video.mp4',
+      isMobile: false
+    });
+  </script>
+</html>
