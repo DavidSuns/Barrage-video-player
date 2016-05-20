@@ -873,9 +873,9 @@ body.custom-fullscreen {
 
 @font-face {
   font-family: "iconfont";
-  src: asset-url("ABPlayer/iconfont.eot");
+  src: url("./../fonts/iconfont.eot");
   /* IE9*/
-  src: asset-url("ABPlayer/iconfont.eot?#iefix") format("embedded-opentype"), asset-url("ABPlayer/iconfont.woff") format("woff"), asset-url("ABPlayer/iconfont.ttf") format("truetype"), asset-url("ABPlayer/iconfont.svg#iconfont") format("svg");
+  src: url("./../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("./../fonts/iconfont.woff") format("woff"), url("./../fonts/iconfont.ttf") format("truetype"), url("./../fonts/iconfont.svg#iconfont") format("svg");
   /* iOS 4.1- */ }
 
 .iconfont {

@@ -9,12 +9,12 @@
     "type": "git"
   },
   "devDependencies": {
+    "gulp": "3.9.1",
     "gulp-sass": "2.3.1"
   },
   "keywords": [
     "video, player"
   ],
   "dependencies": {
-    "gulp": "3.9.1"
   }
 }
