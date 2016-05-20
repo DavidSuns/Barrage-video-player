@@ -136,7 +136,7 @@ body.custom-fullscreen {
 
 .kaminari-setting {
   left:15px;top:0;
-  margin-top: 5px;
+  line-height: 28px;
 }
 
 .kaminari-setting.press,
@@ -147,7 +147,7 @@ body.custom-fullscreen {
 
 .kaminari-color {
   left:45px;top:0;
-  margin-top: 5px;
+  line-height: 28px;
 }
 
 .kaminari-send {
@@ -274,12 +274,10 @@ body.custom-fullscreen {
 .abp-play {
   left:0;
   margin-left: 12px;
-  margin-top: 6px;
 }
 
 .abp-next {
   left:45px;
-  margin-top: 6px;
 }
 
 .abp-time {
@@ -296,7 +294,6 @@ body.custom-fullscreen {
 
 .abp-volume {
   right:218px;
-  margin-top: 9px;
 }
 
 .ab-volume-bar {
@@ -331,7 +328,6 @@ body.custom-fullscreen {
 
 .kaminari-show {
   right:104px;
-  margin-top: 6px;
 }
 
 .abp-settings {
@@ -344,6 +340,7 @@ body.custom-fullscreen {
   color: #fff;
   font-size: 14px;
   text-align: center;
+  line-height: 20px;
 }
 
 .abp-settings.unable {
@@ -357,7 +354,6 @@ body.custom-fullscreen {
 
 .abp-fullscreen {
   right:15px;
-  margin-top: 9px;
 }
 
 .ab-progress-bar {

@@ -232,7 +232,7 @@ var ABP = {
 					"className": "abp-control-button kaminari-show  iconfont  icon-kaminari-show  js-kaminari-show"
 				}),
 				_("span", {
-					"className": "abp-control-button abp-settings  icon-settings  js-abp-settings-btn"
+					"className": "abp-control-button abp-settings js-abp-settings-btn"
 				}),
 				_("i", {
 					"className": "abp-control-button abp-fullscreen  iconfont  icon-fullscreen  js-abp-fullscreen-btn"

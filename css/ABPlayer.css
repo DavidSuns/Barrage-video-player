@@ -123,7 +123,7 @@ body.custom-fullscreen {
 .kaminari-setting {
   left: 15px;
   top: 0;
-  margin-top: 5px; }
+  line-height: 28px; }
 
 .kaminari-setting.press,
 .kaminari-color.press {
@@ -132,7 +132,7 @@ body.custom-fullscreen {
 .kaminari-color {
   left: 45px;
   top: 0;
-  margin-top: 5px; }
+  line-height: 28px; }
 
 .kaminari-send {
   top: 0;
@@ -247,12 +247,10 @@ body.custom-fullscreen {
 
 .abp-play {
   left: 0;
-  margin-left: 12px;
-  margin-top: 6px; }
+  margin-left: 12px; }
 
 .abp-next {
-  left: 45px;
-  margin-top: 6px; }
+  left: 45px; }
 
 .abp-time {
   left: 87px;
@@ -265,8 +263,7 @@ body.custom-fullscreen {
   font-size: 12px; }
 
 .abp-volume {
-  right: 218px;
-  margin-top: 9px; }
+  right: 218px; }
 
 .ab-volume-bar {
   position: absolute;
@@ -297,8 +294,7 @@ body.custom-fullscreen {
   border: 1px solid #ff8ca1; }
 
 .kaminari-show {
-  right: 104px;
-  margin-top: 6px; }
+  right: 104px; }
 
 .abp-settings {
   right: 47px;
@@ -309,7 +305,8 @@ body.custom-fullscreen {
   border-radius: 10px;
   color: #fff;
   font-size: 14px;
-  text-align: center; }
+  text-align: center;
+  line-height: 20px; }
 
 .abp-settings.unable {
   background-color: #e7e7e7;
@@ -319,8 +316,7 @@ body.custom-fullscreen {
   background-color: #ff8ca1; }
 
 .abp-fullscreen {
-  right: 15px;
-  margin-top: 9px; }
+  right: 15px; }
 
 .ab-progress-bar {
   position: absolute;
