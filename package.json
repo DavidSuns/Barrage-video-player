@@ -15,7 +15,9 @@
     "gulp-uglify": "^1.5.3"
   },
   "keywords": [
-    "video, player"
+    "video player, barrage"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
