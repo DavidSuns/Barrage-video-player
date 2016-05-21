@@ -115,6 +115,7 @@ body.custom-fullscreen {
 .abp-text-button {
   position: absolute;
   top: 6px;
+  display: table;
   overflow: hidden;
   cursor: pointer;
   -webkit-transition: background-color .2s ease-in-out;
@@ -144,7 +145,10 @@ body.custom-fullscreen {
   background-color: #ff8ca1; }
 
 .kaminari-send-text {
-  padding-top: 3px; }
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0; }
 
 .kaminari-send.press {
   background-color: #cc605f; }
@@ -284,17 +288,16 @@ body.custom-fullscreen {
 
 .volume-bar-cursor {
   position: absolute;
-  top: -3.5px;
+  top: -5px;
   width: 13px;
   height: 13px;
   text-decoration: overline;
   background: #fff;
-  /*box-shadow: 0 0 20px rgba(0,0,0,.3);*/
   border-radius: 20px;
   border: 1px solid #ff8ca1; }
 
 .kaminari-show {
-  right: 104px; }
+  right: 110px; }
 
 .abp-settings {
   right: 47px;
@@ -454,13 +457,14 @@ body.custom-fullscreen {
 .kaminari-setting-panel .font-settings-title {
   position: absolute;
   left: 6px;
-  top: 6px; }
+  top: 6px;
+  margin: 0; }
 
 .kaminari-setting-panel .show-mode-title {
   position: absolute;
   left: 6px;
   top: 65px;
-  margin-bottom: 7px; }
+  margin: 7px 0; }
 
 .kaminari-setting-panel .font-settings-area {
   position: absolute;
@@ -509,13 +513,13 @@ body.custom-fullscreen {
   background-repeat: no-repeat; }
 
 .show-mode-item .show-style-icon.style-one {
-  background-image: image-url("./../images/go-through-show.png"); }
+  background-image: url("./../images/go-through-show.png"); }
 
 .show-mode-item .show-style-icon.style-two {
-  background-image: image-url("./../images/top-show.png"); }
+  background-image: url("./../images/top-show.png"); }
 
 .show-mode-item .show-style-icon.style-three {
-  background-image: image-url("./../images/bottom-show.png"); }
+  background-image: url("./../images/bottom-show.png"); }
 
 .show-mode-item .show-style-text {
   margin-top: 5px; }
@@ -523,10 +527,10 @@ body.custom-fullscreen {
 .general-kaminari-settings {
   position: absolute;
   right: 15px;
-  bottom: 65px;
+  bottom: 80px;
   display: none;
   width: 225px;
-  height: 148px;
+  height: 130px;
   background: rgba(0, 0, 0, 0.8); }
 
 .general-kaminari-settings.show {
@@ -546,7 +550,6 @@ body.custom-fullscreen {
   position: absolute;
   left: 6px;
   top: 6px;
-  margin-bottom: 40px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; }
@@ -554,8 +557,7 @@ body.custom-fullscreen {
 .general-kaminari-settings .setting-bar-area {
   position: absolute;
   width: 91px;
-  height: 35px;
-  margin-bottom: 15px; }
+  height: 35px; }
 
 .general-kaminari-settings .opacity-area {
   left: 10px;
@@ -591,8 +593,9 @@ body.custom-fullscreen {
   display: block; }
 
 .setting-bar-area .bar-label {
-  padding-right: 1px;
-  text-align: center; }
+  margin: 0;
+  text-align: center;
+  line-height: 15px; }
 
 .setting-bar-area .base-bar {
   position: absolute;
@@ -627,7 +630,8 @@ body.custom-fullscreen {
 
 .setting-bar-area .bar-name {
   position: absolute;
-  top: 20px;
+  top: 30px;
+  margin: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; }
@@ -705,12 +709,11 @@ body.custom-fullscreen {
 .play-show-icon {
   position: absolute;
   left: 45px;
-  bottom: 80px;
+  bottom: 60px;
   opacity: .9;
   display: none;
   margin-left: -30px;
   pointer-events: none;
-  box-shadow: 1px 1px 5px #c8c8c8;
   border-radius: 51px;
   height: 101px; }
   .play-show-icon .icon-play-show {
