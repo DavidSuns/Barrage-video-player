@@ -1,5 +1,5 @@
 # Barrage-video-player
-一款强大的视频弹幕播放器，拥有丰富的功能，优美的UI，使用简单方便。
+一款强大的视频弹幕播放器，用原生HTML5实现，拥有丰富的功能，优美的UI，使用简单方便。
 
 ##功能介绍
 ### 视频功能介绍
@@ -59,4 +59,4 @@ gulp
 node server.js
 ```
 
-4. 浏览 `http://localhost:8080//demo/videoDemo.html`
+4. 浏览 `http://localhost:8080/`
