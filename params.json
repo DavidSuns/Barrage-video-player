@@ -1,0 +1,6 @@
+{
+  "name": "Barrage-video-player",
+  "tagline": "A html5 video player,  which has barrage feature.",
+  "body": "# Barrage-video-player\r\n一款强大的视频弹幕播放器，拥有丰富的功能，优美的UI，使用简单方便。\r\n\r\n##功能介绍\r\n### 视频功能介绍\r\n* 视频播放，暂停。\r\n* 视频的下一集切换。\r\n* 视频时间显示，进度条拖拽。\r\n* 视频音量调节，静音。\r\n* 视频全屏，取消全屏功能。\r\n* 视频清晰度显示及切换。\r\n\r\n> 播放器提供视频当前清晰度的显示，如果该视频拥有多种清晰度，那么可以在不同清晰度之间切换；如果视频只提供一种清晰度选择，则只提供当前清晰度显示，图标变灰，切换功能失效。系统默认的清晰度显示为高清。\r\n\r\n* 视频控制的快捷键支持。\r\n\r\n> 播放器的快捷键功能，支持的操作有：\r\n> * 播放 － 暂停状态下space\r\n> * 暂停 － 播放状态下space\r\n> * 快进 － left\r\n> * 快退 － right\r\n> * 音量加 － up，仅在全屏状态下可用\r\n> * 快进 － down，仅在全屏状态下可用\r\n> * 退出全屏 － esc，仅在全屏状态下可用\r\n\r\n* 视频的移动端播放。\r\n\r\n>播放器也支持在移动端的播放，包括IOS和Android客户端。\r\n\r\n* 多段视频源支持。\r\n\r\n>播放器也对分段视频进行支持，对于播放时间较久的视频，例如电影等，有时会有多段视频出现，每一段视频只是整个视频的一部分，对于这种情况，本播放器也能很好的支持。\r\n\r\n### 弹幕功能介绍\r\n* 弹幕的播放取消。\r\n* 弹幕发送速度调节。\r\n* 弹幕透明度调节。\r\n* 同屏最大弹幕数调节。\r\n* 弹幕描边宽度调节。\r\n* 发送弹幕。\r\n* 发送弹幕颜色调节。\r\n* 发送弹幕字体大小调节。\r\n* 发送弹幕运动模式调节。\r\n\r\n### 开发环境\r\n\r\n1. 安装依赖\r\n```shell\r\nnpm install\r\n```\r\n\r\n2. 使用gulp监听文件改动\r\n```shell\r\ngulp\r\n```\r\n\r\n3. 运行\r\n```shell\r\nnode server.js\r\n```\r\n\r\n4. 浏览 `http://localhost:8080//demo/videoDemo.html`\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
