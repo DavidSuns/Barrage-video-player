@@ -63,3 +63,6 @@ node server.js
 ```
 
 4. 浏览 `http://localhost:8080//demo/videoDemo.html`
+
+##License
+MIT
