@@ -59,4 +59,4 @@ gulp
 node server.js
 ```
 
-4. 浏览 http://localhost:8080//demo/videoDemo.html
+4. 浏览 <font color="#4590a3">http://localhost:8080//demo/videoDemo.html</font>
