@@ -24,8 +24,14 @@ gulp.task('copyFont', function () {
         .pipe(gulp.dest('dist/fonts'))
 });
 
+gulp.task('copyImages', function () {
+    gulp.src('images/*.*')
+        .pipe(gulp.dest('dist/images'))
+});
+
 gulp.task('auto', function() {
   gulp.watch('css/*.css', ['css']);
   gulp.watch('js/*.js', ['js']);
   gulp.watch('fonts/*.*', ['copyFont']);
+  gulp.watch('images/*.*', ['copyImages']);
 });
