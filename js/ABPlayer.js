@@ -1,8 +1,5 @@
-//= require jquery
-//= require ABPlayer/ABPLibxml
-//= require_self
 var ABP = {
-	"version":"0.8.0"
+	"version":"1.0.0"
 };
 
 (function(){
@@ -55,11 +52,8 @@ var ABP = {
 			"width":512,
 			"height":384,
 			"src":"",
-			"videoID" : "",
 			"posterImg":"",
 			"isMobile": false,
-			"isUserLogin": false,
-			"originUrl": "",
 			"videoQualityInfo":{
 				currentVideoQuality: "high",
 				videoQualityDes: {
@@ -675,9 +669,8 @@ var ABP = {
 			isLoop: false,
 			videosGetReady: false,
 			isMobile: this.params.isMobile,
-			videoID: this.params.videoID,
+			// videoID: this.params.videoID,
 			fullscreen : false,
-			// vQualitySourceInited : false,
 			canPlay : false,
 			isWaiting: false,
 			onGenSettingsPanel: false,
@@ -877,16 +870,7 @@ var ABP = {
 					$(".js-kaminari-input").val("");
 				}
 
-				$.post(
-					"/videos/" + this.params.videoID +"/subtitles",
-					"subtitle[font_size]:" + fontSize + "&subtitle[stime]:" + currentTime +
-					"&subtitle[color]:" + color + "&subtitle[content]:" + message +
-					"&subtitle[mode]:" + showStyle + "&subtitle[video_id]:" + this.params.videoID,
-					function(data){
-						console.log("send successfully.");
-					},
-					"json"
-				);
+				//TODO send message info to the server.
 			},
 
 			durBarMove: function(element, bar, e, cursor) {
@@ -1056,15 +1040,6 @@ var ABP = {
 
 				$(".abp-settings").text(this.videoQualityDes[this.priorityQualityChosen]);
 
-				if(this.isUserLogin){
-          $.post("video_quality.json" + "?quality=" + this.priorityQualityChosen,
-					function(data){
-					});
-	      }
-	      else{
-	        utils.setCookie('quality',this.priorityQualityChosen);
-	      }
-
 				isPlay = (currentVideo.paused) ? false : true;
 
 				if(this.videos.length === this.videoQuality[this.priorityQualityChosen].length) {
@@ -1109,7 +1084,6 @@ var ABP = {
 							}
 						}
 						this.swapVideo(this.videos);
-						// needReswapVideos = true;
 					}
 					}
 					/* reset current time for video */
@@ -1161,10 +1135,6 @@ var ABP = {
 								me.videos[n].muted = videoMutedState;
 								me.videos[n].volume = videoVolume;
 							}
-
-							// if(needReswapVideos) {
-							// 	this.swapVideo(this.videos);
-							// }
 
 							if(isPlay) {
 								currentVideo.play();
@@ -1376,7 +1346,6 @@ var ABP = {
 			},
 
 			_initVolumeBar : function() {
-				// ABPInst.video.get(0).volume = 0.7;
 				for(var i=0; i< ABPInst.videos.length; i++) {
 					ABPInst.videos[i].get(0).volume = 0.7;
 				}
@@ -1385,7 +1354,6 @@ var ABP = {
 					$(".js-volume-bar").css("opacity", 1);
 					$(".js-volume-bar-cursor").css("opacity", 1);
 					if(ABPInst.videos[ABPInst.currentVideoNum].get(0).muted) {
-						// ABPInst.video.get(0).muted = false;
 						for(var j=0; j< ABPInst.videos.length; j++) {
 							ABPInst.videos[j].get(0).muted = false;
 						}
@@ -1462,7 +1430,6 @@ var ABP = {
 						for(i=0; i< ABPInst.videos.length; i++) {
 							ABPInst.videos[i].get(0).muted = false;
 						}
-						// ABPInst.video.get(0).muted = false;
 						$(".js-volume-bar").css("opacity", 1);
 						$(".js-volume-bar-cursor").css("opacity",1);
 						$(this).removeClass("icon-mute").addClass("icon-volume");
@@ -1470,7 +1437,6 @@ var ABP = {
 						for(i=0; i< ABPInst.videos.length; i++) {
 							ABPInst.videos[i].get(0).muted = true;
 						}
-						// ABPInst.video.get(0).muted = true;
 						$(".js-volume-bar").css("opacity", 0);
 						$(".js-volume-bar-cursor").css("opacity",0);
 						$(this).removeClass("icon-volume").addClass("icon-mute");
@@ -1484,9 +1450,9 @@ var ABP = {
 						ABPInst.priorityQualityChosen = e.target.attributes.value.value;
 						ABPInst.priorityQuality = ABPInst.priorityQualityChosen;
 						if(ABPInst.videoQualityDes.hasOwnProperty(ABPInst.priorityQualityChosen)) {
+							//get video url for new prioritu quality.
 							$.post(
-								"http://cnm.bao.tv/?url="+ ABPInst.originUrl +"&format="+ item +"&token=hh",
-								// "http://cnm.bao.tv/?url=" + "http://v.pptv.com/show/ibdOtKzlDS4nsatI.html?rcc_src=B3" + "&format=" + ABPInst.priorityQualityChosen + "&token=hh",
+								"the url which can get new video sources",
 								function(data){
 									ABPInst.videoQuality[ABPInst.priorityQualityChosen] = data.source_urls;
 									ABPInst.setVideoPriorityQuality();
@@ -1504,7 +1470,6 @@ var ABP = {
 							}
 						}
 
-						// ABPInst.priorityQuality = ABPInst.priorityQualityChosen;
 						ABPInst.onFormatList = false;
 						$(this).removeClass("show");
 						$(".js-abp-settings-btn").removeClass("focus");
@@ -1909,25 +1874,10 @@ var ABP = {
 								}
 							}
 						} else {
-							// var lastVideoIsFullscreen = false;
 							if(ABPInst.fullscreen) {
 								ABPInst.cancelVideoFullscreen();
-								// lastVideoIsFullscreen = true;
-								// ABPInst.fullscreen = !ABPInst.fullscreen;
 							}
 							ABPInst.currentVideoNum += 1;
-
-							// if(lastVideoIsFullscreen) {
-							// 	function dispatch(el, type){
-					    //     try{
-					    //         var evt = document.createEvent('Event');
-					    //         evt.initEvent(type,true,true);
-					    //         el.dispatchEvent(evt);
-					    //     }catch(e){alert(e)};
-						  //   }
-							// 	var fullscreenBtn = document.getElementById("abp-fullscreen-btn");
-							// 	dispatch(fullscreenBtn, 'click');
-							// }
 							videos[ABPInst.currentVideoNum].get(0).currentTime = 0;
 							videos[ABPInst.currentVideoNum].get(0).play();
 						}
@@ -2169,10 +2119,8 @@ var ABP = {
 	ABP.changeToMobileBehavior = function(instance) {
 		var timeoutID;
 		$(".abp-container").unbind("click");
-		// instance.canPlay = true;
 		$(".js-play-show-icon").addClass("show");
 		$(".abp-container").bind("touchend",function() {
-			// instance.video.get(0).play();
 		});
 	};
 })();
