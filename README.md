@@ -1,6 +1,9 @@
 # Barrage-video-player
 一款强大的视频弹幕播放器，拥有丰富的功能，优美的UI，使用简单方便。
 
+## 在线Demo
+`https://davidsuns.github.io/Barrage-video-player/`
+
 ##功能介绍
 ### 视频功能介绍
 * 视频播放，暂停。
