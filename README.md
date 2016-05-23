@@ -1,4 +1,51 @@
 # Barrage-video-player
+A powerful html5 barrage video player, with rich features, beautiful UI, and easy using.
+
+## Online Demo
+[`https://davidsuns.github.io/Barrage-video-player/`](https://davidsuns.github.io/Barrage-video-player/)
+
+##Features Introduction
+### Video Features
+* Video play, stop.
+* Switch to next video.
+* Video time show, progress bar drag and drop.
+* Setting for video volume, mute.
+* Video fullscreen and cancel fullscreen.
+* Video quality show and switch.
+
+> 播放器提供视频当前清晰度的显示，如果该视频拥有多种清晰度，那么可以在不同清晰度之间切换；如果视频只提供一种清晰度选择，则只提供当前清晰度显示，图标变灰，切换功能失效。系统默认的清晰度显示为高清。
+
+* Keyboard support.
+
+> 播放器的快捷键功能，支持的操作有：
+> * 播放 － 暂停状态下space
+> * 暂停 － 播放状态下space
+> * 快进 － left
+> * 快退 － right
+> * 音量加 － up，仅在全屏状态下可用
+> * 快进 － down，仅在全屏状态下可用
+> * 退出全屏 － esc，仅在全屏状态下可用
+
+* Video play in mobile device.
+
+>播放器也支持在移动端的播放，包括IOS和Android客户端。
+
+* Multi-video sources support.
+
+>播放器也对分段视频进行支持，对于播放时间较久的视频，例如电影等，有时会有多段视频出现，每一段视频只是整个视频的一部分，对于这种情况，本播放器也能很好的支持。
+
+### Barrage Features
+* Barrage play and cancel.
+* Setting for barrage play speed.
+* Setting for barrage opacity.
+* Setting for max barrage number in screen.
+* Setting for barrage border-width.
+* Sending barrage.
+* Setting for sending barrage color.
+* Setting for sending barrage font size.
+* Setting for sending barrage play mode.
+
+# Barrage-video-player 中文文档
 一款强大的视频弹幕播放器，拥有丰富的功能，优美的UI，使用简单方便。
 
 ## 在线Demo
@@ -62,7 +109,7 @@ gulp
 node server.js
 ```
 
-4. 浏览 `http://localhost:8080//demo/videoDemo.html`
+4. 浏览 `http://localhost:8080/demo/videoDemo.html`
 
 ##License
 MIT
