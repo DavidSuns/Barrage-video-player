@@ -5,7 +5,7 @@
 | ------ | ------ | ------------------------------------------------------ |
 | create | element, params | instance |
 
-###参数说明
+### Parameter Introduction
 | parameter name   | type    | description |
 | ------ | ------ | ------------------------------------------------------ |
 | element | object|string   | you could set jquery element object of container for video player, or its id in string type |
