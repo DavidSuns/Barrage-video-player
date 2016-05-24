@@ -44,6 +44,9 @@ A powerful html5 barrage video player, with rich features, beautiful UI, and eas
 * Setting for sending barrage font size.
 * Setting for sending barrage play mode.
 
+## API
+[API document]('./doc/api.md')
+
 ## Develop Environment
 
 1. Dependencies install
@@ -110,6 +113,9 @@ node server.js
 * 发送弹幕颜色调节。
 * 发送弹幕字体大小调节。
 * 发送弹幕运动模式调节。
+
+## API
+[API 文档]('./doc/api-cn.md')
 
 ## 开发环境
 
