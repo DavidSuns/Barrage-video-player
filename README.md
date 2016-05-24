@@ -45,7 +45,7 @@ A powerful html5 barrage video player, with rich features, beautiful UI, and eas
 * Setting for sending barrage play mode.
 
 ## API
-[API document]('./doc/api.md')
+[API document]('doc/api.md')
 
 ## Develop Environment
 
@@ -115,7 +115,7 @@ node server.js
 * 发送弹幕运动模式调节。
 
 ## API
-[API 文档]('./doc/api-cn.md')
+[API 文档]('doc/api-cn.md')
 
 ## 开发环境
 
