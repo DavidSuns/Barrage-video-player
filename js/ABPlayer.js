@@ -78,15 +78,6 @@ var ABP = {
 		return instance;
 	};
 
-	ABP.setVideoSrc = function (sourceUrls) {
-		var playList = [];
-
-		this.params.src = sourceUrls;
-		playList = this._initVideo();
-
-		$(".abp-video").empty().append(playList);
-	};
-
 	ABP.setVideoQuality = function(curQuality, format_list) {
 		$(".abp-settings").text(format_list[curQuality]);
 		this.params.videoQualityInfo.currentVideoQuality = curQuality;
